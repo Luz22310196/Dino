@@ -9,7 +9,7 @@ int main()
 
     // Cargar la imagen desde un archivo
     sf::Texture texture;
-    if (!texture.loadFromFile("./assets/dinosauiro/dinosaurio1.png"))
+    if (!texture.loadFromFile("./assets/dinosaurio/dinosaurio1.png"))
     {
         // Manejar el error si no se puede cargar la imagen
         return -1;
@@ -17,6 +17,7 @@ int main()
 
     // Crear un sprite y asignarle la textura
     sf::Sprite sprite(texture);
+    sprite.setPosition(250, 350);
 
     // Bucle principal
     while (window.isOpen())
@@ -38,6 +39,7 @@ int main()
         window.draw(shape);
         // Dibujar el sprite en la ventana
        
+        sprite.move(sf::Vector2f(0.1, 0));
         window.draw(sprite);
         
         // Mostrar la ventana

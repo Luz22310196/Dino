@@ -9,7 +9,7 @@ int main()
 
     // Cargar la imagen desde un archivo
     sf::Texture texture;
-    if (!texture.loadFromFile("./assets/captus/captus1.png"))
+    if (!texture.loadFromFile("./assets/mapa/mapa.png"))
     {
         // Manejar el error si no se puede cargar la imagen
         return -1;
@@ -17,7 +17,7 @@ int main()
 
     // Crear un sprite y asignarle la textura
     sf::Sprite sprite(texture);
-    sprite.setPosition(400, 350);
+    sprite.setPosition(0, 350);
 
     // Bucle principal
     while (window.isOpen())
