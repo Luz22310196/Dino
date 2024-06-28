@@ -33,7 +33,7 @@ int main()
     sprite3.setTexture(texture3);
     sprite4.setTexture(texture4);
 
-    sprite1.setPosition(250,250); 
+    sprite1.setPosition(150,250); 
     sprite2.setPosition(0,350);
     sprite3.setPosition(350, 250);
     sprite4.setPosition(100,50);
@@ -61,7 +61,6 @@ int main()
         // Dibujar los sprites en la ventana
         sprite2.move(sf::Vector2f(-0.01, 0));
         window.draw(sprite2);
-        sprite1.move(sf::Vector2f(0.01, 0));
         window.draw(sprite1); 
         sprite3.move(sf::Vector2f(-0.01, 0));
         window.draw(sprite3);
