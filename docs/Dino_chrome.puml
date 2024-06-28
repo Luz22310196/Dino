@@ -1,0 +1,110 @@
+@startuml Dinochrome
+
+Class Dinosaurio { 
+    
++int velocidad
++int salto
++int vida
++int puntaje
++void correr()
++void perderVida()
++void ganarPuntos()
+}
+
+Class Juego {
+
++List<Dinosaurio> dinosaurios
++Mapa mapa
++Puntaje puntaje
++MejorPuntaje mejorPuntaje
++void iniciar()
++void terminar()
++void reiniciar()
++void actualizarPuntaje()
+}
+
+Class Velocidad {
+
++int valor
++void aumentar()
++void disminuir()
+}
+
+Class Obstaculo {
+
++int captus
++int ptesaurio
+}
+
+Class Captus{
+
++void aparecer()
+}
+
+Class Ptesaurio{
+
++void aparecer()
++void volar()
+}
+
+Class Mapa{
+
++List<Nube> nubes
++List<Captus> cactus
++List<Pterosaurio> pterosaurios
++void generar()
++void actualizar()
+}
+
+class Vida {
+
++int cantidad
++void perder()
++void ganar()
+}
+
+class Distancia {
+
++int valor
++void aumentar()
+}
+
+class Nube {
+
++void mover()
+}
+
+class Puntaje {
+
++int valor
++void aumentar()
+}
+
+class MejorPuntaje {
+
++int valor
++void verificar()
+}
+
+Captus <|-- Obstaculo
+Ptesaurio <|-- Obstaculo
+
+Dinosaurio "1" *-- "1" Velocidad
+Dinosaurio "1" *-- "1" Vida
+
+Juego "1" --* "1" Dinosaurio
+Juego "1" *-- "*" Mapa 
+Juego "1" *-- "*" Puntaje
+Juego "1" *-- "*" MejorPuntaje
+Juego "1" o-- "*" Distancia
+
+
+Mapa "1" o-- "*" Nube
+Mapa "1" o-- "*" Obstaculo
+
+Puntaje "1" *-- "1" Dinosaurio
+MejorPuntaje "1" *-- "1" Puntaje
+
+@enduml
+
+
