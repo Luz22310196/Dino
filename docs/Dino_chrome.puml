@@ -50,7 +50,7 @@ Class Ptesaurio{
 Class Mapa{
 
 +List<Nube> nubes
-+List<Captus> cactus
++List<Cactus> cactus
 +List<Pterosaurio> pterosaurios
 +void generar()
 +void actualizar()
