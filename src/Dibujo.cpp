@@ -18,7 +18,7 @@ int main()
     {
         return -1;
     }
-    if (!texture3.loadFromFile("./assets/captus/captus1.png"))
+    if (!texture3.loadFromFile("./assets/cactus/cactus1.png"))
     {
         return -1;
     }

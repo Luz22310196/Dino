@@ -1,14 +1,15 @@
 #include "Velocidad.hpp"
 #include "Vida.hpp"
 #include "Juego.hpp"
-#include <lis>
-
-class Dinosaurio 
-
-{ 
-private:
-lis<Dinosaurio> dinosaurios; 
-public: 
-Dinosaurio(/*args */){}
-~Dinosaurio(){}
+    using namespace std:
+class Dinosaurio{ 
+    private:
+    public: 
+        int Velocidad;
+        int Salto;
+        int Vida;
+        int Puntaje;
+        void Correr(){}
+        void Perdervida(){}
+        void Ganarpuntos(){}
 };
