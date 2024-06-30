@@ -38,6 +38,10 @@ int main()
     sprite3.setPosition(350, 250);
     sprite4.setPosition(100,50);
 
+    sprite1.setScale(1.2f, 1.2f);
+    sprite3.setScale(1.2f, 1.2f);
+    sprite4.setScale(1.2f, 1.2f);
+
     // Bucle principal
     while (window.isOpen())
     {
