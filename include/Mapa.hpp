@@ -1,12 +1,27 @@
-#include "Juego.hpp"
+#pragma once
+#include"Mapa.hpp"
+#include "Nube.hpp"
+#include "Obstaculo.hpp"
+#include <vector>
+#include <SFML/Graphics.hpp>
 #include<list>
 
-class Mapa 
-{ 
-private: 
+using namespace std;
 
-lis<Juego> juegos  ; 
-public: 
-Mapa(/*args */){}
-~Mapa(){}
+class Mapa {
++List<Nube> nubes
++List<Cactus> cactus
++List<Pterosaurio> pterosaurios
++void generar()
++void actualizar()
+}
+
+class Mapa {
+public:
+    Mapa();
+    ~Mapa();
+
+private:
+    std::vector<Nube*> nubes;
+    std::vector<Obstaculo*> obstaculos;
 };

@@ -1,8 +1,19 @@
-#include"Cactus.hpp"
-#include"Ptesaurio.hpp"
-#include<iostream
+#pragma once
+#include "Obstaculo.hpp"
+#include <SFML/Graphics.hpp>
+
+using namespace std;
+
 class Obstaculo:{ 
-public: 
-int Obstaculo::Cactus()
-int Obstaculo::Ptesaurio()
+
++int captus;
++int ptesaurio;
 };
+
+class Obstaculo {
+   public:
+Obstaculo();
+~Obstaculo(); 
+};
+
+

@@ -1,11 +1,18 @@
-#include "Dinosaurio.hpp"
+#pragma once
+
+#include "Vida.hpp"
 #include <lis>
 
-class Vida
-{ 
-private:
-lis<Dinosaurio> dinosaurios ; 
-public: 
-Vida(/*args */){}
-~Vida(){}
+using namespace std; 
+
+class Vida {
++int cantidad
++void perder()
++void ganar()
+}
+
+class Vida {
+public:
+    Vida();
+    ~Vida();
 };

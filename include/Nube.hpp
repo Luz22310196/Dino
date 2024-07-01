@@ -1,10 +1,17 @@
+#pragma once
 
-class Nube 
+#include "Nube.hpp"
+#include <SFML/Graphics.hpp>
 
-{ 
-private:
-lis<> ; 
-public: 
-Nube(/*args */){}
-~Nube(){}
+using namespace std;
+
+class Nube {
+
++void mover()
+};
+
+class Nube {
+public:
+    Nube();
+    ~Nube();
 };

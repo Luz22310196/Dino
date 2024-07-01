@@ -1,9 +1,16 @@
+#pragma once
+#include "Obstaculo.hpp"
+#include <SFML/Graphics.hpp>
+#include "Cactus.hpp"
+ 
+ using namespace std;
+ 
+class Cactus{
++void aparecer()
+};
+class Cactus: public Obstaculo {
 
-#include "Obstaculo"
-
-class Cactus
-{ 
-public: 
-Cactus();
-int Cactus::Obstaculo()
+    public:
+    Cactus();
+    ~Cactus();
 };

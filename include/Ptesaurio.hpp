@@ -1,9 +1,17 @@
+#pragma once
 #include "Obstaculo.hpp"
-#include <lis>
+#include "Ptesaurio.hpp"
+#include <SFML/Graphics.hpp>
 
-class Ptesaurio 
-{ 
-Ptesaurio();
-public: 
-Ptesaurio::Obstaculo()
+using namespace std;
+
+class Ptesaurio {
++void aparecer()
++void volar()
+};
+
+Class Ptesaurio: public Obstaculo {
+    public:
+    Ptesaurio();
+    ~Ptesaurio();
 };

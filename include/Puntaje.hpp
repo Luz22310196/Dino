@@ -1,14 +1,22 @@
-#include "Juego.hpp"
-#include "Dinosaurio"    
-#include <list>
+#pragma once
+
+#include "Dinosaurio.hpp" 
+#include "Puntaje.hpp"
+#include <SFML/Graphics.hpp>
 
 using namespace std;
 
-class juego
-{ 
+class Puntaje {
+
++int valor
++void aumentar()
+};
+
+class Puntaje {
+public:
+    Puntaje();
+    ~Puntaje();
+
 private:
-lis<Dinosaurio> dinosaurios; 
-public: 
-Puntaje(/*args */){}
-~Puntaje(){}
+    Dinosaurio* dinosaurio;
 };
